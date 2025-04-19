@@ -104,11 +104,9 @@ Excel Power Query – Initial formatting, cleaning, merging
 
 Pandas, NumPy – Data manipulation
 
-Seaborn, Matplotlib, Plotly – Visualizations
+Seaborn, Matplotlib – Visualizations
 
 Scikit-learn – Machine learning & evaluation
-
-Dash – Interactive dashboard
 
 Tableau – Final dashboard visualization
 
