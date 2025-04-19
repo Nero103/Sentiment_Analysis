@@ -84,7 +84,7 @@ Model Used: **Logistic Regression**
 
 Pipeline:
 
-* Text data vectorized with TfidfVectorizer
+* Text data vectorized with CountVectorizer
 
 * Logistic regression trained to classify sentiment
 
