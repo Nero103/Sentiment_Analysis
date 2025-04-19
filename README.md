@@ -76,7 +76,7 @@ To train a sentiment classifier, reviews were labeled:
 * Neutral reviews (rating = 3) were excluded from the model training
 
 ## Machine Learning Model
-Model Used: Logistic Regression
+Model Used: **Logistic Regression**
 
 Pipeline:
 
@@ -91,13 +91,13 @@ Confusion Matrix:
 * Showed balanced performance across both classes with minimal misclassification
 
 ## Interpretations
-Positive Buzz: Viewers generally liked the movie, especially emphasizing themes like family and emotional storytelling
+**Positive Buzz**: Viewers generally liked the movie, especially emphasizing themes like family and emotional storytelling
 
-Trust in Negativity: Lower-rated reviews, particularly 2s, were more likely to receive helpfulness votes—possibly because readers trust critical reviews as being more in-depth or honest
+**Trust in Negativity**: Lower-rated reviews, particularly 2s, were more likely to receive helpfulness votes—possibly because readers trust critical reviews as being more in-depth or honest
 
-Model Reliability: The logistic regression model performed well using only review text, proving that even simple models can yield high accuracy when paired with meaningful features
+**Model Reliability**: The logistic regression model performed well using only review text, proving that even simple models can yield high accuracy when paired with meaningful features
 
-Release Momentum: Review frequency spiked at launch and gradually tapered—showing that audience sentiment is heavily concentrated around a movie’s initial hype window
+**Release Momentum**: Review frequency spiked at launch and gradually tapered—showing that audience sentiment is heavily concentrated around a movie’s initial hype window
 
 ## Tools & Libraries
 Excel Power Query – Initial formatting, cleaning, merging
