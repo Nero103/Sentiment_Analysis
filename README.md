@@ -53,6 +53,9 @@ Time of Reviews:
 * Review volume peaked near the movie's release date (June 16, 2023), showing strong early interest
 
 ## Dashboard Insights
+
+![Dashboard 1 (2)](https://github.com/user-attachments/assets/fa0c46a0-7922-48a8-a3ee-c6ddc0010e63)
+
 The interactive Plotly Dash dashboard provides key insights:
 
 Review Distribution: A bar chart shows how many reviews fell into each NewRating (1–5)
