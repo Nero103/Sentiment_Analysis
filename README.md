@@ -89,7 +89,7 @@ Pipeline:
 * Logistic regression trained to classify sentiment
 
 Accuracy:
-* Achieved an accuracy of ~85.5%, performing well in distinguishing positive from negative reviews
+* Achieved an accuracy of ~87.3%, performing well in distinguishing positive from negative reviews
 
 Evaluation Metrics:
 * **Accuracy score**: 0.873
@@ -99,13 +99,13 @@ Evaluation Metrics:
 
 Based on the metrics above, the model got an accuracy of 0.873, or found to be 87.3% accurate.
 
-Given that we are trying to solve a classification problem, accuracy is good to know, especially with the given result. However, this metric has its limitations in our case. Since or data is kept imbalanced, to be representative of the population in our dataset, the model could have diffculty fales positives and negatives. This caveat prompts more focus on the precision and recall scores.
+Given that we are trying to solve a classification problem, accuracy is good to know, especially with the given result. However, this metric has its limitations in our case. Since or data is kept imbalanced, to be representative of the population in our dataset, the model could have difficulty predicting false positives and negatives. This caveat prompts more focus on the precision and recall scores.
 
-Precision and recall will be useful at evaluating the correct predictive capability of our model because both balance false positives and fale negatives.
+Precision and recall will be useful at evaluating the correct predictive capability of our model because both balance false positives and false negatives.
 
 The model displays a precision score of 0.951, suggesting the model is good at predicting true positives - meaning the review was positive - while balancing false positives. Alternatively, the recall score is 0.886, showing a lower performance in predicting true negative - where the review was negatives - while balancing for false negatives. These both give a better understanding of model performance.
 
-The **F1 score** for our model is 0.918. ths score balances the precision and recall performace to assess how well the model delivers predictions. Given the results, the F1 score suggests a good predictive power in this model.
+The **F1 score** for our model is 0.918. this score balances the precision and recall performance to assess how well the model delivers predictions. Given the results, the F1 score suggests a good predictive power in this model.
 
 Confusion Matrix:
 
