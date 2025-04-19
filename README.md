@@ -56,17 +56,15 @@ Time of Reviews:
 
 ![Dashboard 1 (2)](https://github.com/user-attachments/assets/fa0c46a0-7922-48a8-a3ee-c6ddc0010e63)
 
-The interactive Plotly Dash dashboard provides key insights:
+The interactive dashboard in Tableau provides key insights, following a Z-pattern:
 
-Review Distribution: A bar chart shows how many reviews fell into each NewRating (1–5)
+**Sentiment Column Chart**: a column chart showing the distribution of sentiment scores from June to July, broken down by sentiment category, shows June had more ratings than July , yet negative views dropped significantly in July. The timeline captures the burst in review activity close to release
 
-Helpfulness vs. Rating: Bar chart shows how helpfulness votes relate to review ratings, highlighting that lower-rated reviews were often perceived as more helpful
+**Wordcloud**: Highlights common sentiment-heavy words used in reviews
 
-Rating vs Time: A timeline visualization captures the burst in review activity close to release
+**Review Distribution**: A bar chart shows the total number of reviews fell into each NewRating based on (1–5 rating), broken down by categorized in Positive, Negative, Neutral
 
-Wordcloud: Highlights common sentiment-heavy words used in reviews
-
-Pie Chart: Illustrates the overall distribution of positive vs negative sentiment based on labels
+**Helpfulness vs. Rating**: Scatter plot shows how helpfulness votes relate to review ratings by reviewer, highlighting that lower-rated reviews were often perceived as more helpful
 
 ## Sentiment Analysis Approach
 To train a sentiment classifier, reviews were labeled:
