@@ -79,6 +79,10 @@ To train a sentiment classifier, reviews were labeled:
 
 * Neutral reviews (rating = 3) were excluded from the model training
 
+### Sentiment Labeling Logic
+`sentiment_df['sentiment'] = sentiment_df['NewRating'].apply(lambda rating: +1 if rating > 3 else -1)`
+
+
 ## Machine Learning Model
 Model Used: **Logistic Regression**
 
