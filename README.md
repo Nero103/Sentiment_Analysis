@@ -9,10 +9,11 @@ This is an end-to-end project on sentiment analysis, covering data collection, p
 ```
 ├── README.md
 ├── movie_sentiment_analysis.py
-├── elemental_movie_reviews.xlsx
-├── tableau_dashboard.png
-├── wordcloud_positive.png
-├── wordcloud_negative.png
+├── elemental_review.csv
+├── elemental_review_base.csv
+├── elemental_review_pivot.csv
+├── dashboard_1.png
+├── sentiment_on_elemental.docx
 └── confusion_matrix.png
 ```
 
