@@ -5,6 +5,17 @@ This project analyzes audience sentiment for Pixar's Elemental using real user r
 
 This is an end-to-end project on sentiment analysis, covering data collection, preprocessing, analysis, machine learning, and dashboard visualization.
 
+## Repository Structure
+```
+├── README.md
+├── movie_sentiment_analysis.py
+├── elemental_movie_reviews.xlsx
+├── tableau_dashboard.png
+├── wordcloud_positive.png
+├── wordcloud_negative.png
+└── confusion_matrix.png
+```
+
 ## Objectives
 * Analyze user review data to understand viewer sentiment
 
@@ -32,6 +43,8 @@ Workflow:
 After preprocessing in Power Query, the combined dataset was uploaded into Jupyter Notebook for analysis and machine learning
 
 Three final CSVs were exported for use in Tableau to build the visual dashboard
+
+### Text Cleaning Function
 
 ## Exploratory Data Analysis (EDA)
 Ratings:
@@ -80,8 +93,11 @@ To train a sentiment classifier, reviews were labeled:
 * Neutral reviews (rating = 3) were excluded from the model training
 
 ### Sentiment Labeling Logic
-`sentiment_df['sentiment'] = sentiment_df['NewRating'].apply(lambda rating: +1 if rating > 3 else -1)`
-
+```python
+sentiment_df['sentiment'] = sentiment_df['NewRating'].apply(
+  lambda rating: +1 if rating > 3 else -1
+)
+```
 
 ## Machine Learning Model
 Model Used: **Logistic Regression**
@@ -91,6 +107,28 @@ Pipeline:
 * Text data vectorized with CountVectorizer
 
 * Logistic regression trained to classify sentiment
+
+### Train/Test Split
+```python
+X_train, X_test, y_train, y_test = train_test_split(
+  X,
+  y,
+  test_size= 0.25,
+  stratify= y, 
+  random_state= 42
+)
+```
+
+### Logistic Regression Pipeline
+```python
+vectorizer = CountVectorizer(token_pattern = r'\b\w+\b')
+
+X_train = vectorizer.fit_transform(X_train)
+X_test = vectorizer.transform(X_test)
+
+lr = LogisticRegression()
+lr.fit(X_train, y_train)
+```
 
 Accuracy:
 * Achieved an accuracy of ~87.3%, performing well in distinguishing positive from negative reviews
@@ -138,6 +176,14 @@ Scikit-learn – Machine learning & evaluation
 Tableau – Final dashboard visualization
 
 Listly – Web scraping tool
+
+## Key Findings
+* Most audience sentiment toward *Elemental* was positive
+* Review activity peaked around the movie's release date
+* Negative reviews were more likely to receive helpfulness votes
+* Positive emotional language dominated audience discussions
+* Logistic Regression achieved 87.3% accuracy
+* The model performed especially well at identifying positive reviews
 
 ## Conclusion
 Elemental received generally positive feedback
