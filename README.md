@@ -27,23 +27,32 @@ This is an end-to-end project on sentiment analysis, covering data collection, p
 * Build a machine learning model that classifies sentiment from review text
 
 ## Data Collection & Preprocessing
-Source: Data was collected using Listly (a Chrome extension) from IMDb and Metacritic
 
-Initial Work: Four datasets were cleaned, formatted, and merged using Microsoft Excel Power Query
+Source: Data was collected using Listly (a Chrome extension) from IMDb and Metacritic.
 
-Cleaning Steps:
+Initial Work: Four datasets were cleaned, formatted, and merged using Microsoft Excel Power Query.
 
-1. Removed duplicates
+* Cleaning Steps
+* Removed duplicates
+* Normalized rating scales to a 1–5 scale called NewRating
+* Handled missing values
+* Standardized review text formatting for analysis
+* Natural language processing (NLP) Preprocessing
 
-2. Normalized rating scales to a 1–5 scale called NewRating
+Natural Language Processing preprocessing techniques were applied to the review text before model training. This included:
 
-2. Handled missing values
+* Removing punctuation and special characters
+* Removing emojis and symbols
+* Filtering low-information words through stopword processing
+* Preparing review text for tokenization and vectorization using CountVectorizer
 
-Workflow:
+These preprocessing steps improved text consistency and helped prepare the review data for sentiment classification.
 
-After preprocessing in Power Query, the combined dataset was uploaded into Jupyter Notebook for analysis and machine learning
+## Workflow
 
-Three final CSVs were exported for use in Tableau to build the visual dashboard
+After preprocessing in Power Query, the combined dataset was uploaded into Jupyter Notebook for exploratory analysis, NLP preprocessing, and machine learning.
+
+Three final CSVs were exported for use in Tableau to build the visual dashboard.
 
 ### Text Cleaning Function
 
