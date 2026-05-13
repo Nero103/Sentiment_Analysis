@@ -1,5 +1,7 @@
 # Elemental Movie Review Sentiment Analysis
 
+<img width="8000" height="5867" alt="three_feedback_emoji_happy_sad_medium_cartoon_style" src="https://github.com/user-attachments/assets/72efae43-8d30-46ad-aa8c-0b87043397b2" />
+
 ## Project Overview
 This project analyzes audience sentiment for Pixar's Elemental using real user reviews from IMDb and Metacritic. It explores how people reacted to the film and whether review text alone can predict whether a review is positive or negative. A logistic regression model was built for sentiment classification, and an interactive dashboard visualizes key trends.
 
